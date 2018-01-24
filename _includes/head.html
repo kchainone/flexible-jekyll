@@ -2,7 +2,6 @@
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
 
-  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="{{ site.title }}" property="og:site_name">
   {% if page.title %}
@@ -43,31 +42,6 @@
     {% endfor %}
   {% endif %}
 
-  {% if post.excerpt %}
-    <meta name="twitter:card" content="{{ post.excerpt }}">
-  {% else %}
-    <meta name="twitter:card" content="{{ page.description }}">
-  {% endif %}
-    <meta name="twitter:site" content="@{{ site.site-twitter }}">
-    <meta name="twitter:creator" content="@{{ site.twitter }}">
-  {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}">
-  {% else %}
-    <meta name="twitter:title" content="{{ site.title }}">
-  {% endif %}
-  {% if page.url %}
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  {% endif %}
-  {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description }}">
-  {% else %}
-    <meta name="twitter:description" content="{{ site.description }}">
-  {% endif %}
-  {% if page.img %}
-    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.img }}">
-  {% else %}
-    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.author-img }}">
-  {% endif %}
 
 	<meta name="description" content="{{ page.description }}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
