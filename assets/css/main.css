@@ -1479,9 +1479,15 @@ a.newer-posts:hover {
   background: #fff;
 }
 
-.page-number,.newer-posts,.older-posts,a.older-posts, a.newer-posts{
+.page-number,.newer-posts,.older-posts{
   font-size:14px;
 }
+
+
+a.older-posts, a.newer-posts{
+  font-size:14px;
+}
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
