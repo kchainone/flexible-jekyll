@@ -910,8 +910,8 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
-  top: 0;
+/*  position: fixed;
+*/  top: 0;
   left: 0;
   bottom: 0;
   width: 240px;
@@ -1479,8 +1479,66 @@ a.newer-posts:hover {
   background: #fff;
 }
 
-.page-number{
+.page-number,.newer-posts,.older-posts,a.older-posts, a.newer-posts{
   font-size:14px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size:24px;
+    color:#000;
+  }
+  .header-page .page-title{
+    font-weight: 400;
+
+  }
+  .sidebar {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .sidebar footer ,  .sidebar .sidebar-desc{
+    display: none;
+  }
+
+  .about .cover-author-image{
+    width:50px;
+    height:50px;
+  }
+
+  .about .author-name{
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+  .about {
+    text-align: center;
+    max-width: 480px;
+    margin: 10px auto auto;
+  }
+  .about img {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -1787,6 +1845,8 @@ pre{
 
 .page-post-content h1{
     font-size: 20px;
+    font-weight: 400;
+
     text-align: center;
 
 }
@@ -1888,6 +1948,7 @@ body{
 
 }
 ;
+
 
 
 
