@@ -1453,14 +1453,14 @@ a.newer-posts:hover {
 /*byfj*/
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
   .sidebar{
-    position: relative !important;
+    position: sticky; !important;
     float: right !important;
   }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .sidebar{
-    position: relative !important;
+    position: sticky; !important;
     float: right !important;
   }
 }
